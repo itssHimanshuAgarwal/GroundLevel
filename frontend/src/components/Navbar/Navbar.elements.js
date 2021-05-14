@@ -27,6 +27,10 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+  @media screen and (max-width: 960px) {
+    display:flex;
+    flex-direction:column;
+  }
 `
 export const NavLogo = styled(Link)
 `
@@ -46,7 +50,7 @@ export const NavIcon = styled(FaMagento)
 
 export const MobileIcon = styled.div `
   display: none;
-
+  color:black;
   @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
@@ -72,11 +76,12 @@ export const NavMenu = styled.ul `
     width: 100%;
     height: 90vh;
     position: absolute;
+    color:black;
     top: 80px;
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: white;
   }
 `;
 
@@ -90,6 +95,8 @@ export const NavItem = styled.li `
   }
 
   @media screen and (max-width: 960px) {
+    display:block;
+    height:80px;
     width: 100%;
 
     &:hover {
@@ -99,16 +106,17 @@ export const NavItem = styled.li `
 `;
 
 export const NavItemBtn = styled.nav`
-display: flex;
-align-items: center;
-
-@media screen and (max-width: 768px) {
-  display: none;
+@media screen and (max-width: 960px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
 }
-`
+`;
 
-export const NavLinks = styled(Link)
-`
+export const NavLinks = styled(Link)`
+
 color: black;
 display: flex;
 align-items: center;

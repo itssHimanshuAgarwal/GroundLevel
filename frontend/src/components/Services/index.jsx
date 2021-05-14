@@ -1,7 +1,7 @@
 import React from 'react'
-import Icon1 from '../../images/i1.PNG'
-import Icon2 from '../../images/i2.PNG'
-import Icon3 from '../../images/i3.PNG'
+import i7 from '../../images/i7.PNG'
+import i8 from '../../images/i8.PNG'
+import i9 from '../../images/i9.PNG'
 import {ServicesContainer, ServicesH1, ServicesHs,ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP} from './ServiceElements'
 
 const Services = () => {
@@ -12,20 +12,20 @@ const Services = () => {
 </ServicesHs>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={Icon1}/>
-          <ServicesH2>Reduce expenses</ServicesH2>
-          <ServicesP>We help your fess and increase your overall revenue.</ServicesP>
+          <ServicesIcon src={i7}/>
+          <ServicesH2>Clean Simple</ServicesH2>
+          <ServicesP>12 Lokasi</ServicesP>
         </ServicesCard>
         
         <ServicesCard>
-        <ServicesIcon src={Icon2}/>
-          <ServicesH2>Virtual Offices</ServicesH2>
-          <ServicesP>you can acess our plataform online anywhere in the world.</ServicesP>
+        <ServicesIcon src={i8}/>
+          <ServicesH2>Cafe Ambience</ServicesH2>
+          <ServicesP>12 Lokasi</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3}/>
-          <ServicesH2>Reduce expenses</ServicesH2>
-          <ServicesP>Unlock our special membership card that returns 5% cash back.</ServicesP>
+          <ServicesIcon src={i9}/>
+          <ServicesH2>Home Office</ServicesH2>
+          <ServicesP>12 Lokasi</ServicesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>

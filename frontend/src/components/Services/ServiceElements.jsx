@@ -81,11 +81,16 @@ export const ServicesHs = styled.h1`
 export const ServicesH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
+  margin-left:-100px;
+  color: #1EA59A;
+  text-align:left;
+
 `
 
 export const ServicesP = styled.p`
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
+  margin-left:-125px;
 `
 
 

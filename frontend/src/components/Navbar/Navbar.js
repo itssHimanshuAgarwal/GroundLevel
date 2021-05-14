@@ -40,33 +40,21 @@ function Navbar() {
         <IconContext.Provider value = {
             { color: 'black' }
         } >
-        <Nav >
-        <
-        NavbarContainer >
-        <
-        NavLogo to = '/'
-        onClick = { closeMobileMenu } >
-        <
-        NavIcon / >
-        <
-        /NavLogo> <
-        MobileIcon onClick = { handleClick } > { click ? < FaTimes / > : < FaBars / > } <
-        /MobileIcon> <
-        NavMenu onClick = { handleClick }
+        <Nav>
+        <NavbarContainer >
+        <NavLogo to = '/' onClick = { closeMobileMenu } >
+        <NavIcon / >
+        </NavLogo> 
+        <MobileIcon onClick = { handleClick } > { click ? < FaTimes / > : < FaBars / > } </MobileIcon> 
+        <NavMenu onClick = { handleClick }
         click = { click } >
 
-
-        <
-        NavItem >
-        <
-        NavLinks to = '/'
-        onClick = { closeMobileMenu } >
-        Home 
-        </NavLinks>  < /
-        NavItem > < NavItem >
-        <
-        NavLinks to = '/whoweare'
-        onClick = { closeMobileMenu } >
+        <NavItem >
+        <NavLinks to = '/' onClick = { closeMobileMenu }>Home 
+        </NavLinks> 
+         </NavItem > 
+         <NavItem >
+        <NavLinks to = '/whoweare'onClick = { closeMobileMenu } >
         Who We Are <
         /NavLinks> < /
         NavItem > <
@@ -109,7 +97,9 @@ function Navbar() {
             )
         } <
         /NavItemBtn>  < /
-        NavMenu > < /
+        NavMenu > 
+        
+        < /
         NavbarContainer > < /
         Nav > <
         /IconContext.Provider> < / >

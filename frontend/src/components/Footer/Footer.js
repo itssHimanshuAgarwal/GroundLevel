@@ -10,7 +10,6 @@ import {
   FootBtnLink,
   SocialMedia,
   SocialMediaWrap,
-  WebsiteRights,
   SocialIcons,
   SocialIconLink
 } from './Footer.elements';
@@ -21,9 +20,9 @@ function Footer() {
       <SocialMedia>
         <SocialMediaWrap>   
         <FootItemBtn>  
-          <FootBtnLink to = '/sign-up' >Follow Us On</FootBtnLink>
-           </FootItemBtn>
-          <WebsiteRights></WebsiteRights>
+          <FootBtnLink to = '/' >Follow Us On</FootBtnLink>
+        </FootItemBtn>
+        
           <SocialIcons>
             <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
               <FaTwitter />

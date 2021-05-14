@@ -2,38 +2,14 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import i7 from '../../images/i7.jpg'
 
-export const FeatureContainer = styled.div`
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),url(${i7});
-  height: 100vh;
-  max-height: 500px;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  padding: 0 1rem;
-
-  h1 {
-    font-size: clamp(3rem, 5vw, 5rem);
-  }
-
-  p {
-    margin-bottom: 1rem;
-    font-size: clamp(1rem, 3vw, 2rem);
-  }
-`;
-
-
 export const HeroContainer = styled.div`
+background: url(${i7});
   display: flex;
   justify-content: center;
+  background-repeat: no-repeat;
   align-items: center;
- 
-  padding: 0 30px;
-  height: 800px;
+  padding: 10px 30px;
+  height: 1000px;
   position: relative;
   z-index: 1;
   :before {
@@ -43,7 +19,6 @@ export const HeroContainer = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    background: white;
   }
 `
 export const HeroBg = styled.div`
@@ -58,11 +33,13 @@ export const HeroBg = styled.div`
 `
 
 export const HeroContent = styled.div`
+
   z-index: 3;
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
+  margin-bottom:100px;
   flex-direction: column;
   align-items: center;
 `
@@ -94,13 +71,15 @@ export const HeroP = styled.p`
   }
 `
 export const Img = styled.img `
-  padding-right: 10;
-  border: 0;
-  max-width: 100%;
-  vertical-align: right;
-  display: inline-block;
-  max-height: 700px;
+padding-right: 0;
+border: 0;
+max-width: 100%;
+vertical-align: middle;
+display: inline-block;
+max-height: 500px;
 `;
+
+
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   border-radius: 80px;
@@ -116,7 +95,7 @@ align-items: center;
 flex-direction: row;
 
 @media screen and (max-width: 768px) {
-  display: none;
+  display: block;
 }
 `
 

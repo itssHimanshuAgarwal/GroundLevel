@@ -6,9 +6,9 @@ import WhatWeDo from './pages/WhatWeDo/WhatWeDo';
 import Contacts from './pages/Contacts/Contacts';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
-import Feature from './components/Feature';
 import { Navbar, Footer } from './components';
 import SigninPage from './pages/signin';
+import SignupPage from './pages/signup';
 
 function App() {
     return ( < Router >
@@ -35,6 +35,10 @@ function App() {
         />    <
         Route path = '/login'
         component = { SigninPage }
+        /> 
+        <
+        Route path = '/signup'
+        component = { SignupPage }
         />  </Switch >
         <
         Footer / >

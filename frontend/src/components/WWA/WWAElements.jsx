@@ -8,7 +8,7 @@ export const WWAContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 400px;
   position: relative;
   background-image: url(${i7});
   z-index: 1;
