@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import i7 from '../../images/i7.jpg'
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import i7 from "../../images/i7.jpg";
 
 export const WWAContainer = styled.div`
   background: #0c0c0c;
@@ -13,7 +13,7 @@ export const WWAContainer = styled.div`
   background-image: url(${i7});
   z-index: 1;
   :before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -21,7 +21,7 @@ export const WWAContainer = styled.div`
     left: 0;
     background: white;
   }
-`
+`;
 export const WWABg = styled.div`
   position: absolute;
   top: 0;
@@ -31,7 +31,7 @@ export const WWABg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-`
+`;
 
 export const WWAContent = styled.div`
   z-index: 3;
@@ -41,47 +41,49 @@ export const WWAContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 export const WWAH1 = styled.h1`
-  color: #F3CD03;
-  font-size:36px;
+  color: #f3cd03;
+  font-size: 36px;
+  text-align: center;
+  margin: 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+`;
+export const WWAH2 = styled.h1`
+  color: #112d57;
+  font-size: 40px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px
+    font-size: 40px;
   }
   @media screen and (max-width: 480px) {
-    font-size: 32px
+    font-size: 32px;
   }
-`
-export const WWAH2= styled.h1`
-  color: #112D57;
-  font-size:40px;
-  text-align: center;
-
-  @media screen and (max-width: 768px) {
-    font-size: 40px
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 32px
-  }
-`
+`;
 
 export const WWAP = styled.p`
   margin-top: 20px;
-  color:black;
+  color: black;
   font-size: 20px;
   text-align: center;
   max-width: 600px;
+  line-height: 30px;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px
+    font-size: 24px;
   }
   @media screen and (max-width: 480px) {
-    font-size: 18px
+    font-size: 18px;
   }
-`
-export const Img = styled.img `
+`;
+export const Img = styled.img`
   padding-right: 10;
   border: 0;
   max-width: 100%;
@@ -95,45 +97,42 @@ export const WWABtnWrapper = styled.div`
   display: inline;
   flex-direction: column;
   align-items: center;
-  color:#00B6F0;
+  color: #00b6f0;
   border-radius: 50px;
-`
+`;
 export const WWAItemBtn = styled.nav`
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-@media screen and (max-width: 768px) {
-  display: none;
-}
-`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
-export const WWALinks = styled(Link)
-`
-color: black;
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 0 1rem;
-height: 100%;
-cursor: pointer;
+export const WWALinks = styled(Link)`
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 
-&.active {
-  border-bottom: 3px solid #01bf71
-}
-`
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
+`;
 
-export const WWABtnLink = styled(Link)
-`
-border-radius: 50px;
-background: #00B6F0;
-white-space: nowrap;
-padding: 10px 22px;
-color: white;
-font-size: 16px;
-outline: none;
-border: none;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
-
-`
+export const WWABtnLink = styled(Link)`
+  border-radius: 50px;
+  background: #00b6f0;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+`;

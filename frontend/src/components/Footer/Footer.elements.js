@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
-  background-color: #112D57;
+  background-color: #112d57;
   padding: 4rem 0 4rem 0;
   display: flex;
   flex-direction: column;
-  height:20px;
+  height: 20px;
   justify-content: center;
   align-items: center;
 `;
@@ -39,7 +39,6 @@ export const SocialLogo = styled(Link)`
   margin-bottom: 16px;
 `;
 
-
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
@@ -52,28 +51,25 @@ export const SocialIconLink = styled.a`
   font-size: 24px;
 `;
 
-
 export const FootItemBtn = styled.nav`
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-@media screen and (max-width: 768px) {
-  display: none;
-}
-`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
-export const FootBtnLink = styled(Link)
-`
-border-radius: 50px;
-background: #112D57;
-white-space: nowrap;
-padding: 10px 22px;
-color: white;
-font-size: 16px;
-outline: none;
-border: 1px solid white ;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
-
-`
+export const FootBtnLink = styled(Link)`
+  border-radius: 50px;
+  background: #112d57;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+`;

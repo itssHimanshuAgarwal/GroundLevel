@@ -12,18 +12,18 @@ const breakPoints = [
 function CarouselC() {
   return (
     <>
-        <Carousel breakPoints={breakPoints}>
-          <Item>One</Item>
-          <Item>Two</Item>
-          <Item>Three</Item>
-          <Item>Four</Item>
-          <Item>Five</Item>
-          <Item>Six</Item>
-          <Item>Seven</Item>
-          <Item>Eight</Item>
-        </Carousel>
+      <Carousel breakPoints={breakPoints}>
+        <Item>One</Item>
+        <Item>Two</Item>
+        <Item>Three</Item>
+        <Item>Four</Item>
+        <Item>Five</Item>
+        <Item>Six</Item>
+        <Item>Seven</Item>
+        <Item>Eight</Item>
+      </Carousel>
     </>
   );
-  
-export default CarouselC;
 }
+
+export default CarouselC;
