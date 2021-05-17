@@ -1,23 +1,23 @@
-import styled from 'styled-components';
-import { FaMagento } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { FaMagento } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-export const Nav = styled.nav `
+export const Nav = styled.nav`
   background: white;
   height: 80px;
   margin-top: -80px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  top:0;
-  z-index:10;
+  top: 0;
+  z-index: 10;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
-`
+`;
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -28,12 +28,11 @@ export const NavbarContainer = styled.div`
   padding: 0 24px;
   max-width: 1100px;
   @media screen and (max-width: 960px) {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
   }
-`
-export const NavLogo = styled(Link)
-`
+`;
+export const NavLogo = styled(Link)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
@@ -43,14 +42,13 @@ export const NavLogo = styled(Link)
   align-items: center;
 `;
 
-export const NavIcon = styled(FaMagento)
-`
+export const NavIcon = styled(FaMagento)`
   margin-right: 0.5rem;
 `;
 
-export const MobileIcon = styled.div `
+export const MobileIcon = styled.div`
   display: none;
-  color:black;
+  color: black;
   @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
@@ -62,11 +60,11 @@ export const MobileIcon = styled.div `
   }
 `;
 
-export const NavMenu = styled.ul `
+export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  align-content:flex-start;
+  align-content: flex-start;
   list-style: none;
   text-align: center;
 
@@ -76,18 +74,18 @@ export const NavMenu = styled.ul `
     width: 100%;
     height: 90vh;
     position: absolute;
-    color:black;
+    color: black;
     top: 80px;
-    left: ${({ click }) => (click ? 0 : '-100%')};
+    left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: white;
   }
 `;
 
-export const NavItem = styled.li `
+export const NavItem = styled.li`
   height: 80px;
-  color:black;
+  color: black;
   border-bottom: 2px solid transparent;
 
   &:hover {
@@ -95,8 +93,8 @@ export const NavItem = styled.li `
   }
 
   @media screen and (max-width: 960px) {
-    display:block;
-    height:80px;
+    display: block;
+    height: 80px;
     width: 100%;
 
     &:hover {
@@ -106,40 +104,38 @@ export const NavItem = styled.li `
 `;
 
 export const NavItemBtn = styled.nav`
-@media screen and (max-width: 960px) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 120px;
-}
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
 `;
 
 export const NavLinks = styled(Link)`
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 
-color: black;
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 0 1rem;
-height: 100%;
-cursor: pointer;
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
+`;
 
-&.active {
-  border-bottom: 3px solid #01bf71
-}
-`
-
-export const NavBtnLink = styled(Link)
-`
-border-radius: 50px;
-white-space: nowrap;
-padding: 10px 22px;
-color: #00B6F0;
-font-size: 16px;
-outline: none;
-border: 1px solid #00B6F0;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
-`
+export const NavBtnLink = styled(Link)`
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #00b6f0;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #00b6f0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+`;
