@@ -46,6 +46,7 @@ export const WWAH1 = styled.h1`
   color: #f3cd03;
   font-size: 36px;
   text-align: center;
+  margin: 20px;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -73,6 +74,7 @@ export const WWAP = styled.p`
   font-size: 20px;
   text-align: center;
   max-width: 600px;
+  line-height: 30px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;

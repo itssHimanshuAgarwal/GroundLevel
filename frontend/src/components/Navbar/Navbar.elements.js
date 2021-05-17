@@ -44,6 +44,10 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled(FaMagento)`
   margin-right: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 export const MobileIcon = styled.div`

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const CarouselContainer = styled.div`
-  background-color: #112d57;
-  padding: 4rem 0 2rem 0;
+export default styled.div`
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 150px;
   align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 `;

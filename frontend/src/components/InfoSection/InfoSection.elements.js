@@ -58,6 +58,7 @@ export const TopLine = styled.div`
   letter-spacing: 1.4px;
   margin-left: 15px;
   margin-bottom: 16px;
+  cursor: pointer;
 `;
 
 export const Img = styled.img`
@@ -72,7 +73,7 @@ export const Img = styled.img`
 export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
-  line-height: 1.1;
+  line-height: 1.5;
   font-weight: 600;
   font: Spartan;
   margin-left: 15px;
@@ -85,6 +86,6 @@ export const Subtitle = styled.p`
   font: Spartan;
   font-size: 18px;
   margin-left: 15px;
-  line-height: 24px;
+  line-height: 26px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
 `;
