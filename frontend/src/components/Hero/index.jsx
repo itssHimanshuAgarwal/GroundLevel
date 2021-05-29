@@ -25,9 +25,9 @@ const Hero = () => {
           </HeroP>
           <br></br>
           <HeroItemBtn>
-            <HeroBtnLink to="/signup">Join </HeroBtnLink>{" "}
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <HeroBtn2Link to="/login">Login </HeroBtn2Link>
+            <HeroBtnLink to="/signup">Join Now</HeroBtnLink>{" "}
+            {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
+            {/* <HeroBtn2Link to="/login">Login </HeroBtn2Link> */}
           </HeroItemBtn>
           <br></br>
           <br></br>
