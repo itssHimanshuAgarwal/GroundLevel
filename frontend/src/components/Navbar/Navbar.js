@@ -15,6 +15,8 @@ import {
   NavBtnLink,
 } from "./Navbar.elements";
 
+import { HeroBtnLink, HeroItemBtn } from "../Hero/HeroElements";
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -70,7 +72,7 @@ function Navbar() {
                 </NavLinks>{" "}
               </NavItem>
             </NavMenu>
-            <NavMenu onClick={handleClick} click={click}>
+            {/* <NavMenu onClick={handleClick} click={click}>
               <NavItemBtn>
                 {" "}
                 {button ? (
@@ -83,7 +85,10 @@ function Navbar() {
                   </NavBtnLink>
                 )}{" "}
               </NavItemBtn>{" "}
-            </NavMenu>
+            </NavMenu> */}
+            <HeroItemBtn>
+              <HeroBtnLink to="/signup">Join Now</HeroBtnLink>{" "}
+            </HeroItemBtn>
           </NavbarContainer>{" "}
         </Nav>{" "}
       </IconContext.Provider>{" "}

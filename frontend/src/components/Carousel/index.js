@@ -12,7 +12,7 @@ const breakPoints = [
 function CarouselC() {
   return (
     <>
-      <Carousel breakPoints={breakPoints}>
+      <Carousel breakPoints={breakPoints} style={{padding:"30px"}}>
         <Item>One</Item>
         <Item>Two</Item>
         <Item>Three</Item>
